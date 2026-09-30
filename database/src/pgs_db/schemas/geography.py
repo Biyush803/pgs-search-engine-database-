@@ -91,7 +91,7 @@ class DistrictUpdate(SchemaBase):
 class DistrictRead(DistrictBase, ReadSchema):
     """District data returned by the application."""
 
-    class LocalBodyBase(SchemaBase):
+class LocalBodyBase(SchemaBase):
     """Fields shared by all local-body schemas."""
 
     code: str = Field(
